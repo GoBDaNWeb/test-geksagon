@@ -15,13 +15,12 @@ export const LinkService = {
             },
         });
     },
-    async statistics(data) {
+    async statistics(token) {
         return axios({
             method: 'get',
             url: '/statistics?offset=0&limit=0',
             headers: {
-                Authorization: `Bearer ${data.token}`,
-                accept: 'application/json',
+                Authorization: `Bearer ${token}`,
             },
         });
     },

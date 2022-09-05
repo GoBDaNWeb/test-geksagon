@@ -15,6 +15,7 @@ import styles from './Main.module.scss';
 import BasicTable from './Table';
 
 const Main = observer(() => {
+    console.log(auth.token);
     const { data: statistics, isLoading } = useQuery(['statistics'], () =>
         LinkService.statistics(auth.token),
     );
