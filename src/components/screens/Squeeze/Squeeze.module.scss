@@ -1,0 +1,40 @@
+@import '@styles/variables';
+
+.squeeze {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem 0rem;
+    height: 100vh;
+    .squeezeInput {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        .input {
+            width: 100%;
+        }
+    }
+    .squeezeLink {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        span {
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            transition: $primaryTransition;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:hover {
+                background: #f3f2f2;
+            }
+        }
+    }
+}

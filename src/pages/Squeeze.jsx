@@ -6,13 +6,13 @@ import { observer } from 'mobx-react-lite';
 import auth from '../store/auth';
 
 // * components
-import Main from '../components/screens/Main';
+import Squeeze from '../components/screens/Squeeze';
 
-const MainPage = observer(() => {
+const SqueezePage = observer(() => {
     if (!auth.token) {
         return <Navigate to="/auth" />;
     }
-    return <Main />;
+    return <Squeeze />;
 });
 
-export default MainPage;
+export default SqueezePage;

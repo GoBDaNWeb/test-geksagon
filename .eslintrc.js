@@ -67,5 +67,8 @@ module.exports = {
         'prefer-const': ['off'],
         'react/jsx-no-constructed-context-values': ['off'],
         'react/jsx-curly-newline': ['off'],
+        'react/jsx-one-expression-per-line': ['off'],
+        'react/jsx-props-no-spreading': ['off'],
+        'import/no-unresolved': ['off'],
     },
 };

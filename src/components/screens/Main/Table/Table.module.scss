@@ -1,0 +1,9 @@
+.fullLink {
+    width: 800px;
+}
+.squeeze {
+    cursor: pointer;
+    &:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,18 @@
+@import '@styles/variables';
+
+.clipboard {
+    position: fixed;
+    bottom: -100rem;
+    right: 3rem;
+    background: $successColor;
+    color: $secondaryText;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: $primaryTransition;
+}
+
+.active {
+    bottom: 3rem;
+}

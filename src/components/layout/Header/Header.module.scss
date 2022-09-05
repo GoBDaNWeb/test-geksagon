@@ -1,6 +1,27 @@
 @import '@styles/variables';
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
     height: 5rem;
     box-shadow: $primaryShadow;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    .navbar {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .auth {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
